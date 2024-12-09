@@ -12,9 +12,11 @@ networkmanager                                         # network manager
 network-manager-applet                                 # network manager system tray utility
 bluez                                                  # bluetooth protocol stack
 bluez-utils                                            # bluetooth utility cli
+bluez-deprecated-tools                                 # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
+chntpw
 
 # --------------------------------------------------- // Display Manager
 sddm                                                   # display manager for KDE plasma
@@ -48,7 +50,18 @@ qt5-imageformats                                       # for dolphin image thumb
 ffmpegthumbs                                           # for dolphin video thumbnails
 kde-cli-tools                                          # for dolphin file type defaults
 libnotify                                              # for notifications
-
+inotify-tools
+base-devel
+ncurses
+glu
+mesa
+wxwidgets-gtk3
+wxgtk2-dev
+libpng
+libssh
+unixodbc
+libxslt
+fop
 # --------------------------------------------------- // Theming
 nwg-look                                               # gtk configuration tool
 qt5ct                                                  # qt5 configuration tool
@@ -57,18 +70,46 @@ kvantum                                                # svg based qt6 theme eng
 kvantum-qt5                                            # svg based qt5 theme engine
 qt5-wayland                                            # wayland support in qt5
 qt6-wayland                                            # wayland support in qt6
+nerdfonts-installer-bin
+ttf-firacode
+ttf-fira-code
+ttf-firacode-nerd
 
 # --------------------------------------------------- // Applications
 firefox                                                # browser
+microsoft-edge-stable-bin                              # browser
+google-chrome                                          # browser
+zen-browser-avx2-bin                                   # browser
+brave-bin                                              # browser
 kitty                                                  # terminal
+wezterm                                                # terminal
+zellij                                                 # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
-code                                                   # ide text editor
-
+neovim                                                 # terminal text editor
+visual-studio-code-bin                                 # ide text editor
+zed                                                    # ide text editor
+beekeeper-studio-bin                                   # database
+dbeaver-ee                                             # database
+slack-desktop-wayland                                  # messager
+meld                                                   # compare files
+spotify
+lazygit
+lazydocker-bin
+lazysql
+lazy-ips
+obsidian
 # --------------------------------------------------- // Shell
 eza|zsh                                                # file lister for zsh
+bat|zsh
+asdf-vm|zsh                                            # manager languages
+yazi|zsh                                               # file manager for terminal
 oh-my-zsh-git|zsh                                      # plugin manager for zsh
+zsh-autosuggestions-git|zsh oh-my-zsh-git
+zsh-syntax-highlighting-git|zsh oh-my-zsh-git
+zsh-fast-syntax-highlighting-git|zsh oh-my-zsh-git
+zsh-autocomplete-git|zsh oh-my-zsh-git
 zsh-theme-powerlevel10k-git|zsh oh-my-zsh-git          # theme for zsh
 eza|fish                                               # file lister for fish
 starship|fish                                          # customizable shell prompt

@@ -8,7 +8,7 @@ io.gitlab.adhami3310.Impression                # Impression
 # io.github.dimtpap.coppwr                     # Coppwr
 
 # ------------------------------------------- // Browser
-com.brave.Browser                              # Brave
+# com.brave.Browser                              # Brave
 # org.torproject.torbrowser-launcher           # Tor
 
 # ------------------------------------------- // Social
@@ -25,8 +25,8 @@ io.github.spacingbat3.webcord                  # Webcord
 # ------------------------------------------- // Image/Graphics
 org.inkscape.Inkscape                          # Inkscape
 org.kde.krita                                  # Krita
-org.gimp.GIMP                                  # Gimp
-org.blender.Blender                            # Blender
+# org.gimp.GIMP                                  # Gimp
+# org.blender.Blender                            # Blender
 io.gitlab.theevilskeleton.Upscaler             # ImageUpscaler
 
 # ------------------------------------------- // Photography

@@ -1,0 +1,2 @@
+# Configs for Neovim editor
+

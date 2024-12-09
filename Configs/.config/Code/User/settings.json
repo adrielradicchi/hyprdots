@@ -1,18 +1,213 @@
 {
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "window.menuBarVisibility": "toggle",
-    "editor.fontSize": 12,
-    "editor.scrollbar.vertical": "hidden",
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "security.workspace.trust.untrustedFiles": "newWindow",
-    "security.workspace.trust.startupPrompt": "never",
-    "security.workspace.trust.enabled": false,
-    "editor.minimap.side": "left",
-    "editor.fontFamily": "'Maple Mono', 'monospace', monospace",
-    "extensions.autoUpdate": false,
-    "workbench.statusBar.visible": false,
-    "terminal.external.linuxExec": "kitty",
-    "terminal.explorerKind": "both",
-    "terminal.sourceControlRepositoriesKind": "both",
-    "telemetry.telemetryLevel": "off"
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
+  // "editor.formatOnSave": true,
+  // "editor.formatOnType": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    // "editor.formatOnSave": true,
+    // "editor.formatOnPaste": true,
+    "editor.tabSize": 1,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 1,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[yaml]": {
+    "editor.tabSize": 1,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[dart]": {
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "Dart-Code.dart-code",
+    "editor.inlayHints.enabled": "offUnlessPressed"
+  },
+  "[elixir]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.wordBasedSuggestions": "allDocuments",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.trimAutoWhitespace": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "elixirLS.trace.server": "verbose",
+  "elixirLS.envVariables": {
+    "MIX_ENV": "dev"
+  },
+  "elixirLS.fetchDeps": true,
+  "elixirLS.mixTarget": "dev",
+  "elixir.credo.diffMode.mergeBase": "main",
+  "rust-analyzer.completion.privateEditable.enable": true,
+  "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+  "rust-analyzer.rustfmt.enableRangeFormatting": true,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.formatOnSave": true
+  },
+  "[ruby]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "files.associations": {
+    "*.erb": "erb"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  },
+  "ruby.rubocop.executePath": "/home/adrielradicchi/.asdf/shims/",
+  "ruby.rubocop.configFilePath": ".rubocop.yml",
+  "ruby.rubocop.onSave": true, //run non-lint commands with bundle exec
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
+    },
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "solargraph.diagnostics": true,
+  "rubyLsp.formatter": "rubocop", // use rubocop for formatting
+  "emmet.includeLanguages": {
+    "phoenix-heex": "html",
+    "html-eex": "html",
+    "*.html.erb": "html"
+  },
+  "[go]": {
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "golang.go"
+  },
+  "dart.sdkPath": "/home/adrielradicchi/.asdf/installs/dart/2.18.6/dart-sdk/",
+  "dart.sdkPaths": [
+    "/home/adrielradicchi/.asdf/installs/dart/2.18.6/dart-sdk/",
+    "/home/adrielradicchi/.asdf/installs/dart/2.19.4/dart-sdk/"
+  ],
+  "dart.flutterSdkPath": "/home/adrielradicchi/.asdf/installs/flutter/3.7.7-stable",
+  "dart.flutterSdkPaths": [
+    "/home/adrielradicchi/.asdf/installs/flutter/3.7.7-stable/"
+  ],
+  "workbench.startupEditor": "none",
+  "explorer.confirmDelete": false,
+  "redhat.telemetry.enabled": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.iconTheme": "catppuccin-mocha",
+  "editor.fontFamily": "'FiraCode Nerd Font','Fira Code Retina', 'FiraCode-Retina', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', 'Fira Code Retina', 'FiraCode-Retina', 'Fira Code'",
+  "avdmanager.sdkPath": "/home/adrielradicchi/Android/Sdk",
+  "git.autofetch": true,
+  "workbench.productIconTheme": "macos-modern",
+  // "avdmanager.cmdVersion": "~/Android/Sdk/cmdline-tools/latest/bin/",
+  // "avdmanager.emulator": "~/Android/Sdk/emulator/",
+  // "avdmanager.sdkManager": "~/Android/Sdk/cmdline-tools/latest/bin/sdkmanager",
+  // "avdmanager.sdkPath": "/home/adrielradicchi/Android/Sdk",
+  // "avdmanager.avdHome": "~/Android/Sdk/cmdline-tools/latest/bin/",
+  // "avdmanager.executable": "~/Android/Sdk/cmdline-tools/latest/bin/avdmanager"
+  "workbench.editorAssociations": {
+    "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.tc.json": "default",
+    "{git,gitlens}:/**/*.{md,csv}": "default",
+    "{git,gitlens}:/**/*.{md,csv,svg}": "default"
+  },
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.ignoreProcessNames": [],
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "/bin/zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "lldb.launch.terminal": "integrated",
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "githubPullRequests.pullBranch": "never",
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-linux": "/home/adrielradicchi/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path-linux": "/home/adrielradicchi/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-linux": "/home/adrielradicchi/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
+  "terminal.integrated.fontWeight": "normal",
+  "[javascript][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "helium-icon-theme.showWelcomeMessage": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 180000,
+  "window.confirmSaveUntitledWorkspace": false,
+  "makefile.configureOnOpen": false,
+  "go.toolsManagement.autoUpdate": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "database-client.autoSync": true
 }
+

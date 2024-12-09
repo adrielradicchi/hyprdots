@@ -1,11 +1,50 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Oh-my-zsh installation path
 ZSH=/usr/share/oh-my-zsh/
+
+# golang envs
+. ~/.asdf/plugins/golang/set-env.zsh
+
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="/home/adriel.radicchi/.local/bin:$PATH"
+
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+export GPG_TTY=$(tty)
+
+# ZSH_THEME="spaceship"
 
 # Powerlevel10k theme path
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
-plugins=()
+plugins=(
+    asdf
+    docker
+    docker-compose
+    elixir
+    ruby
+    helm
+    python
+    rust
+    golang
+    git
+    kubectl
+    kubectx
+    minikube
+    sudo
+    zsh-256color
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    fast-syntax-highlighting
+    zsh-autocomplete
+    # ubuntu
+)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -57,6 +96,37 @@ function in {
     fi
 }
 
+# Directory navigation shortcuts
+# alias ..='cd ..'
+# alias ...='cd ../..'
+# alias .3='cd ../../..'
+# alias .4='cd ../../../..'
+# alias .5='cd ../../../../..'
+
+# Always mkdir a path (this doesn't inhibit functionality to make a single dir)
+alias mkdir='mkdir -p'
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+# Display Pokemon
+# pokemon-colorscripts --no-title -r 1,3,6
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+
+export KERL_BUILD_DOCS=yes
+# export KERL_CONFIGURE_OPTIONS="--without-javac -with-ssl=/usr/local/ssl"
+export KERL_CONFIGURE_OPTIONS="--without-javac"
+
+export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 1024000"
+export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
+export TMPDIR="$HOME/.tmp"
+
+export KUBE_EDITOR=nvim
+
 # Helpful aliases
 alias c='clear' # clear terminal
 alias l='eza -lh --icons=auto' # long list
@@ -71,19 +141,3 @@ alias pa='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code' # gui code editor
-
-# Directory navigation shortcuts
-alias ..='cd ..'
-alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
-
-# Always mkdir a path (this doesn't inhibit functionality to make a single dir)
-alias mkdir='mkdir -p'
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Display Pokemon
-pokemon-colorscripts --no-title -r 1,3,6

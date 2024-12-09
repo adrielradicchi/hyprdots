@@ -1,0 +1,495 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "nightly": {
+    "enabled": true,
+    "channel": "stable"
+  },
+  "vim_mode": false,
+  "font_size": 14,
+  // "font_family": "Fira Code",
+  "buffer_font_size": 14,
+  "buffer_font_family": "Fira Code",
+  // "buffer_font_family": "Zed Plex Mono",
+  "buffer_font_fallbacks": [
+    "FiraCode Nerd Font",
+    "FiraCode Nerd Font Propo",
+    "Fira Code",
+    "Zed Plex Mono"
+  ],
+  "preferred_line_length": 80,
+  "buffer_line_height": "comfortable",
+  "ui_font_family": "Fira Code",
+  "ui_font_size": 14,
+  "ui_font_features": {
+    "all": true,
+    "cv01": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+    "ss11": true,
+    "ss12": true,
+    "ss13": true,
+    "ss14": true,
+    "ss15": true,
+    "ss16": true,
+    "ss17": true,
+    "ss18": true,
+    "ss19": true,
+    "ss20": true,
+    "calt": true,
+    "liga": true,
+    "zero": true,
+    "onum": true,
+    "dlig": true
+  },
+  "font-feature-settings": [
+    "dlig",
+    "all",
+    "cv01",
+    "ss01",
+    "ss02",
+    "ss03",
+    "ss04",
+    "ss05",
+    "ss06",
+    "ss07",
+    "ss08",
+    "ss09",
+    "ss10",
+    "ss11",
+    "ss12",
+    "ss13",
+    "ss14",
+    "ss15",
+    "ss16",
+    "ss17",
+    "ss18",
+    "ss19",
+    "ss20",
+    "calt",
+    "liga"
+  ],
+  "buffer_font_features": {
+    "dlig": true,
+    "all": true,
+    "cv01": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true,
+    "ss11": true,
+    "ss12": true,
+    "ss13": true,
+    "ss14": true,
+    "ss15": true,
+    "ss16": true,
+    "ss17": true,
+    "ss18": true,
+    "ss19": true,
+    "ss20": true,
+    "calt": true,
+    "liga": true
+  },
+  "theme": "Catppuccin Mocha (Blur)",
+  "mode": "dark",
+  "journal": {
+    "path": "~",
+    "hour_format": "hour12"
+  },
+  "calls": {
+    // Join calls with the microphone live by default
+    "mute_on_join": false,
+    // Share your project when you are the first to join a channel
+    "share_on_join": false
+  },
+  "scrollbar": {
+    "show": "auto",
+    "cursors": true,
+    "git_diff": true,
+    "search_results": true,
+    "selected_symbol": true,
+    "diagnostics": true
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": true
+  },
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
+  },
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_code_navigation": true
+  },
+  "project_panel": {
+    "button": true,
+    "default_width": 240,
+    "dock": "left",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_size": 20,
+    "auto_reveal_entries": true,
+    "auto_fold_dirs": true,
+    "scrollbar": {
+      "show": "always"
+    }
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4o"
+    },
+    "enabled": false,
+    "button": true,
+    "dock": "right",
+    "default_width": 640,
+    "default_height": 320,
+    "provider": "openai",
+    "version": "2"
+  },
+  "outline_panel": {
+    "button": true,
+    "default_width": 240,
+    "dock": "left",
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_size": 20,
+    "auto_reveal_entries": true,
+    "auto_fold_dirs": true
+  },
+  "git": {
+    "enabled": true,
+    "autoFetch": true,
+    "autoFetchInterval": 300,
+    "autoFetchOnFocus": true,
+    "autoFetchOnWindowChange": true,
+    "autoFetchOnBuild": true,
+    "git_status": true,
+    "autoFetchOnBuildEvents": ["build", "run", "debug"],
+    "autoFetchOnBuildEventsDelay": 1500,
+    "autoFetchOnBuildDelay": 1500,
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 1,
+    "coloring": "fixed",
+    "background_coloring": "disabled"
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "terminal": {
+    "alternate_scroll": "on",
+    "blinking": "terminal_controlled",
+    "copy_on_select": true,
+    "env": {},
+    "font_family": "FiraCode Nerd Font",
+    "font_features": {
+      "dlig": true,
+      "all": true,
+      "cv01": true,
+      "ss01": true,
+      "ss02": true,
+      "ss03": true,
+      "ss04": true,
+      "ss05": true,
+      "ss06": true,
+      "ss07": true,
+      "ss08": true,
+      "ss09": true,
+      "ss10": true,
+      "ss11": true,
+      "ss12": true,
+      "ss13": true,
+      "ss14": true,
+      "ss15": true,
+      "ss16": true,
+      "ss17": true,
+      "ss18": true,
+      "ss19": true,
+      "ss20": true,
+      "calt": true,
+      "liga": true
+    },
+    "font_size": 12,
+    "option_as_meta": true,
+    "button": true,
+    "shell": "system",
+    "toolbar": {
+      "title": true
+    },
+    "working_directory": "current_project_directory"
+  },
+  "file_types": {
+    "Dockerfile": ["Dockerfile.*"]
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 5000
+    }
+  },
+  "languages": {
+    "Markdown": {
+      "remove_trailing_whitespace_on_save": true,
+      "format_on_save": "true",
+      "enable_language_server": true
+    },
+    "Dockerfile": {
+      "enable_language_server": true,
+      "format_on_save": "true",
+      "formatter": {
+        "ignoreMultilineInstructions": true
+      }
+    },
+    "Elixir": {
+      "language_servers": [
+        "elixir-ls",
+        "!lexical",
+        "!next-ls",
+        "tailwindcss-language-server"
+      ],
+      "format_on_save": {
+        "external": {
+          "command": "mix",
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
+        }
+      },
+      "show_completions_on_input": true
+    },
+    "Rust": {
+      "language_servers": ["rust-analyzer", "tailwindcss-language-server"],
+      "formatter": "language_server",
+      "format_on_save": "true",
+      "show_completions_on_input": true
+    },
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "solargraph",
+        "rubocop",
+        "tailwindcss-language-server"
+      ]
+    },
+    "Python": {
+      "format_on_save": "true",
+      "show_completions_on_input": true,
+      "indent_guides": {
+        "enabled": true
+      }
+    },
+    "C": {
+      "format_on_save": "true",
+      "show_completions_on_input": true,
+      "preferred_line_length": 64,
+      "soft_wrap": "preferred_line_length"
+    },
+    "JSON": {
+      "format_on_save": "true",
+      "tab_size": 4
+    },
+    "JavaScript": {
+      "format_on_save": "true",
+      "show_completions_on_input": true,
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      },
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "format_on_save": "true",
+      "show_completions_on_input": true,
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "TSX": {
+      "format_on_save": "true",
+      "show_completions_on_input": true,
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    }
+  },
+  "lsp": {
+    "$LANGUAGE_SERVER_NAME": {
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": true,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true
+        },
+        "inlay_hints": {
+          "enabled": true,
+          "show_type_hints": true,
+          "show_parameter_hints": true,
+          "show_other_hints": true
+          // "edit_debounce_ms": 700,
+          // "scroll_debounce_ms": 50
+        }
+      }
+    },
+    "rust-analyzer": {
+      "binary": {
+        "path_lookup": true
+      },
+      "initialization_options": {
+        "diagnostics": {
+          "experimental": {
+            "enable": true
+          }
+        },
+        // To disable the checking entirely
+        // (ignores all cargo and check settings below)
+        "checkOnSave": true,
+        // To check the `lib` target only.
+        "cargo": {
+          "allTargets": true
+        },
+        "check": {
+          "workspace": true,
+          "command": "clippy"
+        },
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "useParameterNames": true,
+            "enable": "skip_trivial"
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
+        },
+        "rust": {
+          "analyzerTargetDir": true
+        }
+      }
+    },
+    "elixir-ls": {
+      "settings": {
+        "dialyzerEnabled": true,
+        "incrementalDialyzer": true,
+        // "dialyzerWarnOpts": [""],
+        "dialyzerFormat": "dialyxir_long",
+        "mixEnv": "",
+        "envVariables": {},
+        "mixTarget": "",
+        "projectDir": "./",
+        "fetchDeps": false,
+        "suggestSpecs": true,
+        "traceServer": true,
+        "autoInsertRequiredAlias": true,
+        "signatureAfterComplete": true,
+        "enableTestLenses": true,
+        "additionalWatchedExtensions": false,
+        "languageServerOverridePath": false
+      },
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    },
+    "solargraph": {
+      "binary": {
+        "path": "~/bin/solargraph"
+      },
+      "initialization_options": {
+        "diagnostics": true,
+        "formatting": true
+      }
+    },
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "diagnostics": true
+        }
+      }
+    },
+    "rubocop": {
+      "binary": {
+        "path": "~/bin/rubocop"
+      },
+      "initialization_options": {
+        "safeAutocorrect": true
+      }
+    },
+    "gopls": {
+      "initialization_options": {
+        "hints": {
+          "hints": {
+            "assignVariableTypes": true,
+            "compositeLiteralFields": true,
+            "compositeLiteralTypes": true,
+            "constantValues": true,
+            "functionTypeParameters": true,
+            "parameterNames": true,
+            "rangeVariableTypes": true
+          }
+        }
+      }
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "includeLanguages": {
+          "erb": "html",
+          "ruby": "html"
+        },
+        "experimental": {
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
+        }
+      }
+    },
+    "eslint": {
+      "settings": {
+        "codeActionOnSave": {
+          "rules": ["import/order"]
+        }
+      }
+    }
+  }
+}
